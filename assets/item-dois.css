@@ -1,0 +1,38 @@
+.apresentacao {
+  margin-bottom: 3rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.btn-l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.linkedin-btn {
+  width: 20rem;
+  height: 5rem;
+  background-color:#0083B0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 62px;
+  margin: auto;
+  transition: ease-in-out 0.3s;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.linkedin-btn:hover {
+  letter-spacing: 0.5rem;
+}
+
+.eu-dois {
+  text-align: center;
+  margin: auto;
+}
+
+

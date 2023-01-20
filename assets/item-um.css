@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.0rem;
+  
+}
+
+.lista {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.cabecalho1 {
+  margin-left: 1.5rem;
+ 
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo p:hover {
+ 
+  color: #6dd5ed;
+  cursor: pointer;
+  transition: ease-in-out 0.7s;
+  transition: ease-in 0.5s;
+}
+
+.logo p {
+  font-size: 30px;
+}
+
+.cabecalho1:hover {
+  color: black;
+  cursor: pointer;
+  transition: ease-in-out 0.7s;
+  transition: ease-in 0.5s;
+}
+
+.cabecalho2 {
+  margin-right: 1.8rem;
+}
+
+.titulo-projeto {
+  padding: 2rem;
+}
+
+.lista li a:hover {
+  color: black;
+  cursor: pointer;
+  transition: ease-in-out 0.7s;
+  transition: ease-in 0.5s;
+}
+
+.direita ul li a:hover {
+  color: #6dd5ed;
+  transition: ease-in-out 0.7s;
+  transition: ease-in 0.5s;
+}

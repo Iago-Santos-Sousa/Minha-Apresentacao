@@ -1,0 +1,170 @@
+.central {
+  display: flex;
+  max-width: 70rem;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.svgs {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.descricao,
+.descricao p {
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.contatos {
+  max-width: fit-content;
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.contatos p {
+  color: black;
+}
+
+.contatos-dois {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+  max-width: fit-content;
+}
+
+.central-dois {
+  display: flex;
+  max-width: 40rem;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.t-hablidades {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+/* Imagens de fundo */
+.skill {
+  width: 66px;
+  height: 66px;
+  height: 100%;
+  transition: 1.2s;
+}
+
+.svgs div:hover {
+  transform: scale(1.1);
+  transition: 1.2s;
+}
+
+.icone-footer:hover {
+  cursor: pointer;
+  animation: vertical-shaking 1s;
+}
+
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 396px) {
+  .central {
+    gap: 3rem;
+  }
+
+  .descricao {
+    font-size: 1.3rem;
+  }
+
+  .central {
+  }
+
+  .t-hablidades {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .svgs {
+    margin-top: 1rem;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .g1,
+  .g2 {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .contatos {
+    font-size: 13px;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 476px) {
+  .central-dois {
+    display: flex;
+    max-width: 60rem;
+    flex-wrap: wrap-reverse;
+  }
+
+  .contatos {
+    margin: auto;
+  }
+
+  .contatos-dois {
+    margin: auto;
+  }
+}
+
+@media (max-width: 518px) {
+  .t-hablidades {
+    text-align: center;
+    width: 100%;
+    padding: 0rem 0rem 2rem 0rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .central {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .descricao p {
+    font-size: 2rem;
+  }
+
+  .central {
+    height: max-content;
+  }
+
+  .t-hablidades {
+    margin-bottom: 1rem;
+  }
+}

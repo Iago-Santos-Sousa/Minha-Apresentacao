@@ -1,0 +1,63 @@
+.sobre-mim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.eu {
+ max-width: 20rem;
+ text-align: justify;
+}
+
+.eu p {
+ text-align: justify;
+}
+
+.eu-avatar {
+  width: 20rem;
+  height: 100%;
+}
+
+.eu-avatar:hover {
+  cursor: pointer;
+  animation: vertical-shaking 2s;
+}
+
+
+@media (max-width: 722px) {
+  .sobre-mim {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+}
+
+@media (max-width: 462px) {
+  .sobre-mim {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+  }
+
+  .eu {
+   
+   }
+
+  .eu p {
+    text-align: justify;
+    word-wrap: break-word;
+    
+  }
+
+   .avatar {
+    width: 89%;
+    height: 40%;
+  }
+
+  .avatar img {
+    height: 100%;
+    width: 100%;
+  }
+}
