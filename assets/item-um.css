@@ -1,8 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1.0rem;
-  
+  padding-bottom: 1rem;
 }
 
 .lista {
@@ -13,11 +12,11 @@ nav {
 
 .cabecalho1 {
   margin-left: 1.5rem;
- 
 }
 
 ul li {
   list-style: none;
+  text-decoration: none;
 }
 
 a {
@@ -25,7 +24,6 @@ a {
 }
 
 .logo p:hover {
- 
   color: #6dd5ed;
   cursor: pointer;
   transition: ease-in-out 0.7s;
@@ -56,6 +54,7 @@ a {
   cursor: pointer;
   transition: ease-in-out 0.7s;
   transition: ease-in 0.5s;
+  text-decoration: none;
 }
 
 .direita ul li a:hover {

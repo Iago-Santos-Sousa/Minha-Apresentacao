@@ -1,141 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/item-um.css" />
+    <link rel="stylesheet" href="./assets/item-dois.css" />
+    <link rel="stylesheet" href="./assets/item-tres.css" />
+    <link rel="stylesheet" href="./assets/item-tres.css" />
+    <link rel="stylesheet" href="./assets/item-quatro.css" />
+    <link rel="stylesheet" href="./assets/item-cinco.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagens/icons8-globe-48.png"
+      type="image/x-icon"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css">
-  <link rel="stylesheet" href="./assets/item-um.css">
-  <link rel="stylesheet" href="./assets/item-dois.css">
-  <link rel="stylesheet" href="./assets/item-tres.css">
-  <link rel="stylesheet" href="./assets/item-tres.css">
-  <link rel="stylesheet" href="./assets/item-quatro.css">
-  <link rel="stylesheet" href="./assets/item-cinco.css">
-  <link rel="shortcut icon" href="./imagens/icons8-globe-48.png" type="image/x-icon">
-  <title>Document</title>
-</head>
-
-<body>
-
-  <main id="grid-container">
-
-    <section class="item1">
-      <nav>
-        <div class="cabecalho1">
-          Iago
-        </div>
-        <div class="cabecalho2">
-          <ul class="lista">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#habilities">Habilidades</a></li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-
-    <!-- hamburguer -->
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
-    <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <div class="barra">
-      <div class="menu-centro">
-        <div class="barra-conteiner centralizador">
-          <div class="logo esquerda">
-            <p>Iago</p>
-          </div>
-          <nav class="direita">
-            <ul onclick="getElementById('close-menu').checked=false;">
+  <body>
+    <main id="grid-container">
+      <section class="item1">
+        <nav>
+          <div class="cabecalho1">Iago</div>
+          <div class="cabecalho2">
+            <ul class="lista">
               <li><a href="#inicio">Início</a></li>
               <li><a href="#sobre">Sobre mim</a></li>
               <li><a href="#projects">Projetos</a></li>
               <li><a href="#habilities">Habilidades</a></li>
             </ul>
-          </nav>
+          </div>
+        </nav>
+      </section>
+
+      <!-- hamburguer -->
+      <input
+        id="close-menu"
+        class="close-menu"
+        type="checkbox"
+        aria-label="close-menu"
+        role="button"
+      />
+      <label
+        class="close-menu-label"
+        for="close-menu"
+        title="close menu"
+      ></label>
+      <div class="barra">
+        <div class="menu-centro">
+          <div class="barra-conteiner centralizador">
+            <div class="logo esquerda">
+              <p>Iago</p>
+            </div>
+            <nav class="direita">
+              <ul onclick="getElementById('close-menu').checked=false;">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#habilities">Habilidades</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- hamburguer -->
+      <!-- hamburguer -->
 
-    <section class="item2" id="inicio">
-      <div class="apresentacao">
-        <h2>Oi, eu sou</h2>
-        <h1 class="titulo">Iago Dos Santos Sousa</h1><br />
-        <h2 class="eu-dois">Desenvolvedor Front-End</h2>
-      </div>
-      <div class="btn-l">
-        <button class="linkedin-btn"><a href="https://www.linkedin.com/in/iago-dos-santos-sousa-585026236/"
-            target="_blank">Linkedim</a></button>
-      </div>
-    </section>
-
-    <section class="item3" id="sobre">
-      <div class="sobre-mim">
-        <div class="avatar">
-          <img src="./imagens/programmer (1).png" alt="" class="eu-avatar">
-        </div>
-
-        <div class="eu">
-          <h1 class="titulo">Sobre mim</h1>
+      <section class="item2" id="inicio">
+        <div class="apresentacao">
+          <h2>Oi, eu sou</h2>
+          <h1 class="titulo">Iago Dos Santos Sousa</h1>
           <br />
-          <p>Meu nome é Iago Dos Santos Sousa, e decidi trilhar o caminho da programação.</p>
+          <h2 class="eu-dois">Desenvolvedor Web</h2>
         </div>
-      </div>
+        <div class="btn-l">
+          <button class="linkedin-btn">
+            <a
+              href="https://www.linkedin.com/in/iago-dos-santos-sousa-585026236/"
+              target="_blank"
+              >Linkedim</a
+            >
+          </button>
+        </div>
+      </section>
 
-    </section>
+      <section class="item3" id="sobre">
+        <div class="sobre-mim">
+          <div class="avatar">
+            <img src="./imagens/programmer (1).png" alt="" class="eu-avatar" />
+          </div>
 
-    <section class="item4" id="projects">
-      <h1 class="titulo-projeto">Projetos</h1>
-      <div class="projetos">
-        <div class="scroll-down"></div>
-      </div>
-      <div class="git-btn">
-        <button class="botao-git"><a href="https://github.com/Iago-Santos-Sousa" target="_blank">Repositório
-            Github</a></button>
-      </div>
-    </section>
-
-    <section class="item5" id="habilities">
-      <h1 class="t-hablidades">Habilidades</h1>
-
-      <div class="central">
-        <div class="logos">
-          <div class="svgs">
-            <div class="html"><img src="./imagens/html5-svgrepo-com.svg" alt="img" class="skill"></div>
-            <div class="css"><img src="./imagens/css3-svgrepo-com.svg" alt="img" class="skill"></div>
-            <div class="js"><img src="./imagens/javascript-svgrepo-com.svg" alt="img" class="skill"></div>
-            <div class="sass"><img src="./imagens/sass-svgrepo-com.svg" alt="img" class="skill"></div>
-            <div class="git"><img src="./imagens/git-svgrepo-com.svg" alt="img" class="skill"></div>
-            <div class="gihub"><img src="./imagens/github-svgrepo-com.svg" alt="img" class="skill"></div>
+          <div class="eu">
+            <h1 class="titulo">Sobre mim</h1>
+            <br />
+            <p>
+              Meu nome é Iago Dos Santos Sousa, e decidi trilhar o caminho da
+              programação.
+            </p>
           </div>
         </div>
-        <div class="descricao">Passe o mouse</div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="item6">
-      <div class="central-dois">
-        <div class="contatos">
-          <p>E-mail: iago.santos.sousa@gmail</p>
-          <p class="data"></p>
+      <section class="item4" id="projects">
+        <h1 class="titulo-projeto">Projetos</h1>
+        <div class="projetos">
+          <div class="scroll-down"></div>
         </div>
+        <div class="git-btn">
+          <button class="botao-git">
+            <a href="https://github.com/Iago-Santos-Sousa" target="_blank"
+              >Repositório Github</a
+            >
+          </button>
+        </div>
+      </section>
 
-        <div class="contatos-dois">
-          <div class="git-footer">
-            <a href="https://github.com/Iago-Santos-Sousa" target="_blank"><img src="./imagens/githubff2.svg"
-                style="height: 4rem;" alt="" class="icone-footer"></a>
+      <section class="item5" id="habilities">
+        <h1 class="t-hablidades">Habilidades</h1>
+
+        <div class="central">
+          <div class="logos">
+            <div class="svgs">
+              <div class="html skill">
+                <img
+                  src="./imagens/html5-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+              <div class="css skill">
+                <img
+                  src="./imagens/css3-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+              <div class="js skill">
+                <img
+                  src="./imagens/javascript-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+              <div class="sass skill">
+                <img
+                  src="./imagens/sass-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+              <div class="git skill">
+                <img
+                  src="./imagens/git-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+              <div class="gihub skill">
+                <img
+                  src="./imagens/github-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+              <div class="react skill">
+                <img
+                  src="./imagens/react-svgrepo-com.svg"
+                  alt="img"
+                  class="imgs"
+                />
+              </div>
+            </div>
           </div>
-          <div class="linkedin-footer">
-            <a href="https://www.linkedin.com/in/iago-dos-santos-sousa-585026236/" target="_blank"><img
-                src="./imagens/linkedinff2.svg" style="height: 4rem;" alt="" class="icone-footer"></a>
+          <div class="descricao">Passe o mouse</div>
+        </div>
+      </section>
+
+      <footer class="item6">
+        <div class="central-dois">
+          <div class="contatos">
+            <p>E-mail: iago.santos.sousa@gmail</p>
+            <p class="data"></p>
+          </div>
+
+          <div class="contatos-dois">
+            <div class="git-footer">
+              <a href="https://github.com/Iago-Santos-Sousa" target="_blank"
+                ><img
+                  src="./imagens/githubff2.svg"
+                  style="height: 4rem"
+                  alt=""
+                  class="icone-footer"
+              /></a>
+            </div>
+            <div class="linkedin-footer">
+              <a
+                href="https://www.linkedin.com/in/iago-dos-santos-sousa-585026236/"
+                target="_blank"
+                ><img
+                  src="./imagens/linkedinff2.svg"
+                  style="height: 4rem"
+                  alt=""
+                  class="icone-footer"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-
-  </main>
-  <script src="./assets/index.js"></script>
-</body>
-
+      </footer>
+    </main>
+    <script src="./assets/index.js"></script>
+  </body>
 </html>

@@ -3,16 +3,17 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
 }
 
 .eu {
- max-width: 20rem;
- text-align: justify;
+  max-width: 20rem;
 }
 
 .eu p {
- text-align: justify;
+  text-align: justify;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-size: 1.2rem;
 }
 
 .eu-avatar {
@@ -25,13 +26,11 @@
   animation: vertical-shaking 2s;
 }
 
-
 @media (max-width: 722px) {
   .sobre-mim {
     display: flex;
     flex-wrap: wrap-reverse;
   }
-
 }
 
 @media (max-width: 462px) {
@@ -42,16 +41,14 @@
   }
 
   .eu {
-   
-   }
+  }
 
   .eu p {
     text-align: justify;
     word-wrap: break-word;
-    
   }
 
-   .avatar {
+  .avatar {
     width: 89%;
     height: 40%;
   }
