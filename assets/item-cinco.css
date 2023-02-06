@@ -1,5 +1,6 @@
 .central {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* max-width: 70rem; */
@@ -8,6 +9,7 @@
 }
 
 .svgs {
+  margin-top: 20px;
   gap: 1rem;
   display: flex;
   justify-content: center;

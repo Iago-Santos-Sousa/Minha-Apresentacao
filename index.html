@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,20 +17,20 @@
       href="./imagens/icons8-globe-48.png"
       type="image/x-icon"
     />
-    <title>Document</title>
+    <title>Apresentação</title>
   </head>
 
   <body>
     <main id="grid-container">
       <section class="item1">
         <nav>
-          <div class="cabecalho1">Iago</div>
+          <div class="cabecalho1 widget">Iago</div>
           <div class="cabecalho2">
             <ul class="lista">
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#sobre">Sobre mim</a></li>
-              <li><a href="#projects">Projetos</a></li>
-              <li><a href="#habilities">Habilidades</a></li>
+              <li class="widget"><a href="#inicio">Início</a></li>
+              <li class="widget"><a href="#sobre">Sobre mim</a></li>
+              <li class="widget"><a href="#projects">Projetos</a></li>
+              <li class="widget"><a href="#habilities">Habilidades</a></li>
             </ul>
           </div>
         </nav>
@@ -68,13 +69,13 @@
       <!-- hamburguer -->
 
       <section class="item2" id="inicio">
-        <div class="apresentacao">
+        <div class="apresentacao corpo">
           <h2>Oi, eu sou</h2>
           <h1 class="titulo">Iago Dos Santos Sousa</h1>
           <br />
           <h2 class="eu-dois">Desenvolvedor Web</h2>
         </div>
-        <div class="btn-l">
+        <div class="btn-l corpo">
           <button class="linkedin-btn">
             <a
               href="https://www.linkedin.com/in/iago-dos-santos-sousa-585026236/"
@@ -87,11 +88,11 @@
 
       <section class="item3" id="sobre">
         <div class="sobre-mim">
-          <div class="avatar">
+          <div class="avatar corpo">
             <img src="./imagens/programmer (1).png" alt="" class="eu-avatar" />
           </div>
 
-          <div class="eu">
+          <div class="eu corpo">
             <h1 class="titulo">Sobre mim</h1>
             <br />
             <p>
@@ -103,11 +104,11 @@
       </section>
 
       <section class="item4" id="projects">
-        <h1 class="titulo-projeto">Projetos</h1>
-        <div class="projetos">
+        <h1 class="titulo-projeto corpo">Projetos</h1>
+        <div class="projetos corpo">
           <div class="scroll-down"></div>
         </div>
-        <div class="git-btn">
+        <div class="git-btn corpo">
           <button class="botao-git">
             <a href="https://github.com/Iago-Santos-Sousa" target="_blank"
               >Repositório Github</a
@@ -117,54 +118,55 @@
       </section>
 
       <section class="item5" id="habilities">
-        <h1 class="t-hablidades">Habilidades</h1>
+        <h1 class="t-hablidades corpo">Habilidades</h1>
 
-        <div class="central">
+        <div class="central corpo">
           <div class="logos">
+            <div class="descricao">Passe o mouse</div>
             <div class="svgs">
-              <div class="html skill">
+              <div class="html skill widget">
                 <img
                   src="./imagens/html5-svgrepo-com.svg"
                   alt="img"
                   class="imgs"
                 />
               </div>
-              <div class="css skill">
+              <div class="css skill widget">
                 <img
                   src="./imagens/css3-svgrepo-com.svg"
                   alt="img"
                   class="imgs"
                 />
               </div>
-              <div class="js skill">
+              <div class="js skill widget">
                 <img
                   src="./imagens/javascript-svgrepo-com.svg"
                   alt="img"
                   class="imgs"
                 />
               </div>
-              <div class="sass skill">
+              <div class="sass skill widget">
                 <img
                   src="./imagens/sass-svgrepo-com.svg"
                   alt="img"
                   class="imgs"
                 />
               </div>
-              <div class="git skill">
+              <div class="git skill widget">
                 <img
                   src="./imagens/git-svgrepo-com.svg"
                   alt="img"
                   class="imgs"
                 />
               </div>
-              <div class="gihub skill">
+              <div class="gihub skill widget">
                 <img
                   src="./imagens/github-svgrepo-com.svg"
                   alt="img"
                   class="imgs"
                 />
               </div>
-              <div class="react skill">
+              <div class="react skill widget">
                 <img
                   src="./imagens/react-svgrepo-com.svg"
                   alt="img"
@@ -173,19 +175,18 @@
               </div>
             </div>
           </div>
-          <div class="descricao">Passe o mouse</div>
         </div>
       </section>
 
       <footer class="item6">
-        <div class="central-dois">
+        <div class="central-dois corpo">
           <div class="contatos">
             <p>E-mail: iago.santos.sousa@gmail</p>
             <p class="data"></p>
           </div>
 
           <div class="contatos-dois">
-            <div class="git-footer">
+            <div class="git-footer widget">
               <a href="https://github.com/Iago-Santos-Sousa" target="_blank"
                 ><img
                   src="./imagens/githubff2.svg"
@@ -196,6 +197,7 @@
             </div>
             <div class="linkedin-footer">
               <a
+                class="widget"
                 href="https://www.linkedin.com/in/iago-dos-santos-sousa-585026236/"
                 target="_blank"
                 ><img
@@ -209,6 +211,10 @@
         </div>
       </footer>
     </main>
+    <script>
+      ScrollReveal().reveal(".corpo", { duration: 2000 });
+      ScrollReveal().reveal(".widget", { interval: 300 });
+    </script>
     <script src="./assets/index.js"></script>
   </body>
 </html>

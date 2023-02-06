@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
+}
+
+html.sr .corpo {
+  visibility: hidden;
+}
+
+html.sr .widget {
+  visibility: hidden;
 }
 
 body {
@@ -103,8 +111,8 @@ p {
     display: grid;
     grid-template-columns: 300px;
     grid-template-areas:
-      'desenho'
-      'descricao';
+      "desenho"
+      "descricao";
     line-height: 35px;
   }
 
@@ -188,7 +196,7 @@ p {
   }
 
   .close-menu-label::after {
-    content: '≡';
+    content: "≡";
     position: fixed;
     z-index: 2;
     top: 2rem;
@@ -210,7 +218,7 @@ p {
 
   .close-menu:checked ~ .close-menu-label::after {
     display: block;
-    content: '✕';
+    content: "✕";
   }
 
   .barra .barra-conteiner ul li a {
